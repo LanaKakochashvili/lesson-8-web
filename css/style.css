@@ -1,0 +1,50 @@
+.main-image{
+    width: 100%;
+}
+.animation-block{
+    position: relative;
+}
+.ship-image{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left:0%;
+    top: 70%;
+    animation: ship 10s infinite 2s;
+    animation-direction: alternate;
+}
+@keyframes ship{
+    from {top: 0px;}
+    to {right: 500px;}
+}
+.child-image{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top:0%;
+    right:10% ;
+    animation: aliens 30s infinite 5s;
+    margin-top: 570px; 
+}
+    
+@keyframes aliens{
+    0% {rotate: 0deg;}
+    40%{rotate: 70deg;}
+    60% {rotate: 0deg;}
+    80%{rotate:0deg;}
+}
+.alien-image{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top:0%;
+    left:10% ;
+    animation: monster 10s infinite 2s;
+    margin-top: 550px;
+    animation-direction: alternate;
+
+}
+@keyframes monster{
+    from{left: 0;}
+    to{left: 600px;}
+}
